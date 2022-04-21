@@ -40,9 +40,10 @@ class WhenSearchingForTerms {
     DisplayedArticle displayedArticle;
 
     @Test
-    void searchBySingleKeyword() {
+    void searchBySingleKeyword() throws InterruptedException {
         navigate.toTheHomePage();
         search.searchBy("Everest");
+        Thread.sleep(5000);
         System.out.println(">>>>>>>>>" + displayedArticle.getFirstHeading());
         Serenity.reportThat("The first heading should be 'Mount Everest'",
                 () -> assertThat(displayedArticle.getFirstHeading()).isEqualTo("Mount Everest")
