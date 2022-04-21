@@ -20,8 +20,8 @@ class WhenSearchingForTerms {
     /**
      * Define the webdriver instance to be used for these tests
      */
-    @Managed(driver = "chrome")
-    WebDriver driver;
+//    @Managed(driver = "chrome")
+//    WebDriver driver;
 
     /**
      * Navigation actions. This is a UIInteraction class so it will be instantiated automatically by Serenity.

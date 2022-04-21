@@ -62,4 +62,16 @@ serenity {
     requirementsDir = "src/test/resources/features"
 }
 
+tasks.withType(Test) {
+    String resourcesLoc = "./lib/"
+//    String driver = findProperty('selectedDriver')
+    systemProperty 'webdriver.driver', System.getProperty('webdriver.driver', "chrome")
+
+//    systemProperty 'webdriver.gecko.driver', System.getProperty('webdriver.gecko.driver',
+//            "${resourcesLoc}geckodriver.exe")
+
+    systemProperty 'webdriver.chrome.driver', System.getProperty('webdriver.chrome.driver',
+            "${resourcesLoc}chromedriver.exe")
+}
+
 test.finalizedBy(aggregate)
