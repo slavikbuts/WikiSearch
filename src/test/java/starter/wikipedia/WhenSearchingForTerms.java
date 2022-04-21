@@ -43,6 +43,7 @@ class WhenSearchingForTerms {
     void searchBySingleKeyword() {
         navigate.toTheHomePage();
         search.searchBy("Everest");
+        System.out.println(">>>>>>>>>" + displayedArticle.getFirstHeading());
         Serenity.reportThat("The first heading should be 'Mount Everest'",
                 () -> assertThat(displayedArticle.getFirstHeading()).isEqualTo("Mount Everest")
         );
@@ -52,6 +53,7 @@ class WhenSearchingForTerms {
     void searchBySingleKeyword2() {
         navigate.toTheHomePage();
         search.searchBy("Glory to Ukraine");
+        System.out.println(">>>>>>>>>" + displayedArticle.getFirstHeading());
         Serenity.reportThat("The first heading should be 'Slava Ukraini'",
                 () -> assertThat(displayedArticle.getFirstHeading()).isEqualTo("Slava Ukraini")
         );
