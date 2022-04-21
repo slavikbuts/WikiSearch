@@ -20,7 +20,7 @@ class WhenSearchingForTerms {
     /**
      * Define the webdriver instance to be used for these tests
      */
-    @Managed(driver = "chrome")
+    @Managed(driver = "firefox")
     WebDriver driver;
 
     /**
