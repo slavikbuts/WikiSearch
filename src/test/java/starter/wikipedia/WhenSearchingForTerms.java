@@ -13,9 +13,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SerenityJUnit5Extension.class)
 class WhenSearchingForTerms {
-    public static void main(String[] args) {
-
-    }
+//    public static void main(String[] args) {
+//
+//    }
 
     /**
      * Define the webdriver instance to be used for these tests
