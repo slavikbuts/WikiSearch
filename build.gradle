@@ -71,7 +71,7 @@ tasks.withType(Test) {
 //            "${resourcesLoc}geckodriver.exe")
 
     systemProperty 'webdriver.chrome.driver', System.getProperty('webdriver.chrome.driver',
-            "${resourcesLoc}chromedriver.exe")
+            "${resourcesLoc}chromedriver_linux")
 }
 
 test.finalizedBy(aggregate)
